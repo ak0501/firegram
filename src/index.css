@@ -65,7 +65,11 @@ label:hover{
   color: var(--error);
 }
 
-/* progress bar styles */
+.progressBar{
+  height: 5px;
+  background: var (var(--primary));
+  margin-top: 20px;
+}
 
 
 /* image grid styles */
