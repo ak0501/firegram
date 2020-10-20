@@ -3,18 +3,19 @@
  import 'firebase/firestore';
  
   var firebaseConfig = {
-    apiKey: "AIzaSyB7_1_8qNto5ZGPVzVwEO6cjWfnK7zUJxI",
-    authDomain: "crud-061.firebaseapp.com",
-    databaseURL: "https://crud-061.firebaseio.com",
-    projectId: "crud-061",
-    storageBucket: "crud-061.appspot.com",
-    messagingSenderId: "644876163597",
-    appId: "1:644876163597:web:992b85665754ca65265344",
-    measurementId: "G-DKT184LR0X"
+   
+      apiKey: "AIzaSyA5V1Y9zI05rD7OA0uj7CDb6lRlr4AacsY",
+      authDomain: "firegram-ac514.firebaseapp.com",
+      databaseURL: "https://firegram-ac514.firebaseio.com",
+      projectId: "firegram-ac514",
+      storageBucket: "firegram-ac514.appspot.com",
+      messagingSenderId: "924673104872",
+      appId: "1:924673104872:web:8a0863298bba48f8e3e25d",
+      measurementId: "G-TRBLWJ611C"
+  
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-//   firebase.analytics();
   const projectStorage = firebase.storage();
   const projectFirestore = firebase.firestore();
 

@@ -5,9 +5,11 @@ const UploadForm = () => {
   const [file, setFile] = useState(null);
   const [error, setError] = useState(null);
 
+  // Array of Allowed file types
+
   const types = ['image/png', 'image/jpeg'];
 
-  const handleChange = (e) => {
+  const changleHandler = (e) => {
     let selected = e.target.files[0];
 
     if (selected && types.includes(selected.type)) {
@@ -22,12 +24,15 @@ const UploadForm = () => {
   return (
     <form>
       <label>
-        <input type="file" onChange={handleChange} />
+        <input type="file" onChange={changleHandler} />
         <span>+</span>
       </label>
       <div className="output">
+        {/* if we have an error ; output a div that says error */}
         { error && <div className="error">{ error }</div>}
+        {/* if valid file name ; output div with file name */}
         { file && <div>{ file.name }</div> }
+        {/*   */}
         { file && <ProgressBar file={file} setFile={setFile} /> }
       </div>
     </form>
