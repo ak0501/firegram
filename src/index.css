@@ -65,7 +65,7 @@ label:hover{
   color: var(--error);
 }
 
-.progressBar{
+.progress-bar{
   height: 5px;
   background: var (var(--primary));
   margin-top: 20px;
