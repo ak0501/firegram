@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import useStorage from '../hooks/UseStorage';
+import useStorage from '../hooks/setStorage';
 import { motion } from 'framer-motion';
 
 const ProgressBar = ({ file, setFile }) => {
