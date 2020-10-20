@@ -13,7 +13,7 @@ function App() {
       <Title/>
       <UploadForm/>
       <ImageGrid selectedImg={setSelectedImg}/>
-      { selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg}/>}
+      { selectedImg && (<Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg}/>)}
     </div>
   );
 }
